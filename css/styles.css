@@ -1,4 +1,5 @@
 /*this are styles applying to the whole webpages*/
+body{}
 .row{
 	margin-top: 10px;
 }
@@ -10,10 +11,31 @@
 	color:#ffffff;
 }
 /*this are styles for the computer choice column*/
+#resultsPanel{
+	background-color: 
+}
+.choices{
+	padding: 10px;
+	/*margin-left: 400px;
+	margin-right: 400px;*/	
+}
 
 #buttonDiv{
 	margin-top: 100px;
 }
+/*this section applies to the results of the game*/
+#resultsPanel{
+	background-color: #000000;
+	color: #ffffff;
+	width: 100%;
+	text-align: center;
+}
+.choices{
+	padding: 10px;
+	/*margin-left: 400px;
+	margin-right: 400px;*/	
+}
+
 
 /*this applies to the panel with game instructions*/
 #instructionsPanel{
