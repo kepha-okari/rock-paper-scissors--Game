@@ -1,47 +1,47 @@
 <html>
 <head>
-	<title>rockp</title>
+	<title>Game</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
+	<div class="container">
 	<div class="container1">
-		<div class="text" align="center">
+		<div class="text" align="center" id="title-div">
 			<h1>Rock Paper Scissor</h1>
 		</div>
 	</div>
-	<div class="container2">
-		<div class="row">
-			<div class="col-md-3">
-			<img src="">	
+		<div class="row" >
+
+			<div class="col-md-7" id="computerChoice">
+				<img src="images/webimage.png">	
+			</div>
+			<div class="col-md-5" id="buttonDiv"> 
+				<button id="rock" class="btn-success btn">Rock</button>
+				<img src="rock.jpeg" height="" width="">
+				<button id="paper" class="btn-success btn">Paper</button>
+				<img src="paper.jpg" height="" width="">
+				<button id="rock" class="btn-success btn">Scissor</button>
+				<img src="scissor.jpg" height="" width="">
+			
 			</div>
 		</div>
-	
-	<div class="row">
-		<div class="col-md-9">
-			<button id="rock" class="btn-success btn">Rock</button>
-			<img src="rock.jpeg" height="" width="">
-			<button id="paper" class="btn-success btn">Paper</button>
-			<img src="paper.jpg" height="" width="">
-			<button id="rock" class="btn-success btn">Scissor</button>
-			<img src="scissor.jpg" height="" width="">
-			
-		</div>
-	</div>
-
-		
-	</div>
 	<div class="row" id="border">
-		<div class="panel panel-default">
+		<div class="panel panel-default" id="instructionsPanel">
 			<div class="panel-body">
-				<h3>Instructions</h3>
-				<p>p>Have you ever wanted to play infinite games of Rock, Paper, Scissors against a fully automatic opponent? Well, now's your chance!<br> Click on the one of the pictures to choose Rock, Paper, or Scissors, and watch the fun begin as our randomizer picks for the computer and the game begins!<br> Our handy win tallies allow you to easily check your stats! Have fun!</p>
+				<h3 id="Instructions">Instructions</h3>
+				<p>Have you ever wanted to play infinite games of Rock, Paper, Scissors against a fully automatic opponent? Well, now's your chance!</br>
+				Click on the one of the pictures to choose Rock, Paper, or Scissors, and watch the fun begin as our randomizer picks for the computer and the game begins!<br> Our handy win tallies allow you to easily check your stats! Have fun!</p>
 			</div>
 
 	</div>
 	<div class="panel panel-body">
 		<div class="message">
-			<p>You Win!</p>
-				<p>You Lose!</p>
-				<p>Tie Game!</p>
+			<h3 class= "messages" id="youWin">You Win!</h3>
+			<h3 class= "messages" id="youLose">You Lose!</h3>
+			<h3 class= "messages" id="youTie">Tie Game!</h3>
 			
 		</div>
 		

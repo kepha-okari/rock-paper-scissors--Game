@@ -1,0 +1,29 @@
+/*this are styles applying to the whole webpages*/
+.row{
+	margin-top: 10px;
+}
+
+/*this are styles applying to the title*/
+#title-div{
+	height: 100px;
+	background-color: #000000;
+	color:#ffffff;
+}
+/*this are styles for the computer choice column*/
+
+#buttonDiv{
+	margin-top: 100px;
+}
+
+/*this applies to the panel with game instructions*/
+#instructionsPanel{
+	margin-left: 70px;
+	margin-top: 10px;
+}
+.messages{
+	margin-left: 400px;
+
+}
+#youWin{}
+#youLose{}
+#youTie{}
