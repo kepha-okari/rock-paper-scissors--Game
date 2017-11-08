@@ -1,5 +1,8 @@
 /*this are styles applying to the whole webpages*/
-body{}
+body{
+	background:url("../images/background.jpg");
+
+}
 .row{
 	margin-top: 10px;
 }
@@ -10,9 +13,27 @@ body{}
 	background-color: #000000;
 	color:#ffffff;
 }
+
+#title{
+	padding-top: 20px;
+}
 /*this are styles for the computer choice column*/
 #resultsPanel{
 	background-color: 
+}
+#buttonDiv button{
+	background-color: #000000;
+	align-content: center;
+	font-size: 25px;
+}
+#rock{
+	color: #3333ff;
+}
+#paper{
+	color:#00e64d ;
+}
+#scissors{
+	color:#00ccff;
 }
 .choices{
 	padding: 10px;
@@ -21,7 +42,7 @@ body{}
 }
 
 #buttonDiv{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 /*this section applies to the results of the game*/
 #resultsPanel{
@@ -49,3 +70,51 @@ body{}
 #youWin{}
 #youLose{}
 #youTie{}
+
+
+/*this section checks applies the blinking button functionality*/
+
+.flash-button{
+	background:blue;
+	padding:5px 10px;
+	color:#fff;
+	border:none;
+	border-radius:5px;
+	
+	animation-name: flash;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	//Firefox 1+
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	//Safari 3-4
+	-moz-animation-name: flash;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+//Firefox 1+
+@-webkit-keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+//Safari 3-4
+@-moz-keyframes flash {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
