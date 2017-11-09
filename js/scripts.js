@@ -2,14 +2,11 @@
 
  //BUSINESS LOGIC
 
-/* var choice1 = 0;
- var choice2 = 0;*/
-
  var compChoice = function() {
  	var rand = Math.floor((Math.random()*3)+1);
  		return rand;
  }
-
+// funtion to compair choices
 var compare = function(choice1,choice2) {
 
  	 if (choice1 === choice2) {
