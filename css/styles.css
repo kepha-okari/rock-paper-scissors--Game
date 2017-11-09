@@ -1,6 +1,9 @@
 /*this are styles applying to the whole webpages*/
 body{
 	background:url("../images/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
 }
 .row{
@@ -21,6 +24,11 @@ body{
 /*this are styles for the computer choice column*/
 #resultsPanel{
 	background-color: 
+}
+.centering {
+	margin-left: 40px;
+	align-content: center;
+	
 }
 #buttonDiv button{
 	background-color: #000000;
@@ -75,10 +83,32 @@ p{
 	font-family: 'Great Vibes', cursive
 
 }
-.messages{
-	margin-left: 400px;
+
+.grand-footer {
+	background-color: rgb(244, 66, 66);
+}
+#footer {
+	height: 10vh;
+	margin-left: 510px;
+	margin-bottom: 15px;
+}
+#footer-icons {
+	margin-top: 80px;
+	display: flex;
+	content: align-center;
+	color:white;
 
 }
+#footer-icons i{
+	padding: 40px 12px;
+	color:white;
+}
+.copyright p {
+	margin-left: 500px;
+	color: white;
+}
+
+
 #youWin{}
 #youLose{}
 #youTie{}
