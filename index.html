@@ -1,32 +1,44 @@
 
 <html>
 <head>
-	<title>Game</title>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Cookie|Great+Vibes|Orbitron" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	<title>Game</title>
 </head>
 	<body>
 		<div class="container">
-			<div class="container1">
+			
 				<div class="text" align="center" id="title-div">
 					<h1 id="title">Rock Paper Scissors</h1>
 				</div>
-			</div>
+			
 
 			<div class="row" >
-				<div class="col-md-7" id="computerChoice">
+				<div class="col-md-4" id="computerChoice">
 					<img src="images/webimage.png">	
 				</div>
-				<div class="col-md-5" id="buttonDiv"> 
-					<button type="click"  class="flash-button" id="rock">Rock</button>
-					<button type="button" class="flash-button" id="paper">Paper</button>
-					<button type="button" class="flash-button" id="scissors">Scissor</button>
-				
+				<div class="col-md-4" id="buttonDiv"> 
+					<div class="centering">
+						<button type="click"  class="flash-button" id="rock">Rock</button>
+						<button type="button" class="flash-button" id="paper">Paper</button>
+						<button type="button" class="flash-button" id="scissors">Scissor</button>
+					</div>
+				</div>
+				<div class="col-md-4" id="computerChoice">
+					<img src="images/webimage.png">	
 				</div>
 			</div>
+					<!-- comp/user choice image and buttons-->
+
 			<div class="row">
 				<div class="panel panel-default" id="resultsPanel">
 					<div class="panel-body">
@@ -35,6 +47,8 @@
 				    </div>
 				</div>
 			</div>
+					<!-- end of result panel -->
+
 			<div class="row" id="border">
 				<div class="panel panel-default" id="instructionsPanel">
 					<div class="panel-body">
@@ -45,23 +59,36 @@
 
 				</div>
 			</div>
+					<!-- end of instruction section -->
+
 			<div class="panel panel-body">
 				<div class="message">
 					<img src="images/winner.jpg">
 					<img src="images/lose.png">
 					<img src="images/play-again.png">
 
-					<!-- <h3 class= "messages" id="youWin"><blink>You Win!</blink></h3>
-					<h3 class= "messages" id="youLose">You Lose!</h3>
-					<h3 class= "messages" id="youTie">Tie Game!</h3> -->
-					
 				</div>
 				
 			</div>
-			<div class="footer" id="footer">
-				<p>Created by:martians</p>
-				<button type="button" class="flash-button">A Martians Game</button>
-			</div>
+
+			<div class="grand-footer">
+					<div id="footer">				
+						
+		                <section class="col-12" id="footer-icons">
+		                  <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+		                  <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+		                  <i class="fa fa-pinterest-square fa-lg" aria-hidden="true"></i>
+		                 </section>
+
+		            </div> 
+
+		                <section class=" copyright col-12">
+		                	<p>&copy Martians 2017</p>
+		                </section>
+		    </div>
+
+                
+
 		</div>	
 
 

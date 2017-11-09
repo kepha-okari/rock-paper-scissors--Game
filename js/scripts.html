@@ -38,12 +38,12 @@
         // Display computer choice
         document.write("<p>Computer:" + " " + computerChoice + "</p>");
         // Compare user choice vs computer choice
-        var compare = function(choice1,choice2) {
-            if (choice1 === choice2) {
+        var compare = function(choice1,user) {
+            if (choice1 === user) {
                 return "It's a tie!";
             }
             if (choice1 === "rock") {
-                if (choice2 === "scissors") {
+                if (user === "scissors") {
                     // rock wins
                     return "You win!";
                 } else {    
@@ -52,7 +52,7 @@
                 }
             }
             if (choice1 === "paper") {
-                if (choice2 === "rock") {
+                if (user === "rock") {
                     // paper wins
                     return "You win!";
                 } else {
@@ -61,7 +61,7 @@
                 }
             }
             if (choice1 === "scissors") {
-                if (choice2 === "rock") {
+                if (user === "rock") {
                     // rock wins
                     return "You lose! Try again.";
                 } else {
