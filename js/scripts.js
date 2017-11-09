@@ -48,6 +48,24 @@ var compare = function(choice1,choice2) {
  
  }
 
+
+//to display what comp and user choice
+function words(choice){
+	if (choice===1){
+		return "ROCK";
+	} else if(choice===2) {
+		return "PAPER";
+	} else{
+		return "SCISSORS";
+	}
+
+}
+
+ // function to display the selected image
+  function displayImage (chosen) {
+    $("#computerReplace").attr("src","images/" + chosen + ".jpg").hide().fadeIn();
+  }
+
  //USER INTERFACE
  $(document).ready(function(){
  	// this is Rock button
@@ -59,9 +77,14 @@ var compare = function(choice1,choice2) {
  		console.log(choice1);
  		choice2 = 1;
 
+ 		$("#computerChose").text(words(choice1));
+ 		$("#youChoice").text(words(choice2));
+ 		 $("#resultsPanel").show(3000).fadeOut(3000);
+
+
  		var results = compare(choice2,choice1);
 
- 		alert(results);
+ 		displayImage (choice1);
  	});
 
  	// this is paper button
@@ -73,9 +96,15 @@ var compare = function(choice1,choice2) {
  		console.log(choice1);
  		choice2 = 2;
 
+ 		$("#computerChose").text(words(choice1));
+ 		$("#youChoice").text(words(choice2));
+ 		 $("#resultsPanel").show(3000).fadeOut(3000);
+
+
  		var results = compare(choice2,choice1);
 
- 		alert(results);
+
+ 		//alert(results);
  	});
 
  	// this is Rock button
@@ -87,10 +116,18 @@ var compare = function(choice1,choice2) {
  		console.log(choice1);
  		choice2 = 3;
 
+ 		$("#computerChose").text(words(choice1));
+ 		$("#youChoice").text(words(choice2));
+ 		 $("#resultsPanel").show(3000).fadeOut(3000);
+
  		var results = compare(choice2,choice1);
 
- 		alert(results);
+ 		//alert(results);
  	});
+
+
+
+
  });
 
  
