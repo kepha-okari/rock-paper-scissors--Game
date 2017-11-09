@@ -22,7 +22,7 @@ var compare = function(choice1,choice2) {
 	                    return "You win!";
 	                } else {
 	                    // paper wins
-	                    return "You lose! Try again.";
+	                    return "You lose! ";
 	                }
 	        }
             //PAPER
@@ -32,14 +32,14 @@ var compare = function(choice1,choice2) {
 	                    return "You win!";
 	                } else {
 	                    // scissors wins
-	                    return "You lose! Try again.";
+	                    return "You lose! ";
 	                }
             }
             //SCISSOR
 	        else if (choice1 === 3) {
 	                if (choice2 === 1) {
 	                    // rock wins
-	                    return "You lose! Try again.";
+	                    return "You lose! ";
 	                } else {
 	                    // scissors wins
 	                    return "You win!";
@@ -62,8 +62,10 @@ function words(choice){
 }
 
  // function to display the selected image
-  function displayImage (chosen) {
+  function displayImage (chosen,chosen2) {
     $("#computerReplace").attr("src","images/" + chosen + ".jpg").hide().fadeIn();
+    $("#replace").attr("src","images/" + chosen2 + ".jpg").hide().fadeIn();
+   
   }
 
  //USER INTERFACE
@@ -83,8 +85,9 @@ function words(choice){
 
 
  		var results = compare(choice2,choice1);
+ 		$("#resultColor").text(results);
 
- 		displayImage (choice1);
+ 		displayImage (choice1,choice2);
  	});
 
  	// this is paper button
@@ -102,6 +105,9 @@ function words(choice){
 
 
  		var results = compare(choice2,choice1);
+ 		$("#resultColor").text(results);
+
+ 		displayImage (choice1,choice2);
 
 
  		//alert(results);
@@ -121,9 +127,18 @@ function words(choice){
  		 $("#resultsPanel").show(3000).fadeOut(3000);
 
  		var results = compare(choice2,choice1);
+ 		$("#resultColor").text(results).show(2000).fadeOut(5000);
+
+ 		displayImage (choice1,choice2);
 
  		//alert(results);
  	});
+
+ 	// refresh the page for new game
+    $('#refreshButton').click(function() {
+    location.reload();
+
+	});
 
 
 

@@ -24,17 +24,24 @@
 
 			<div class="row" >
 				<div class="col-md-4" id="computerChoice">
-					<img src="images/webimage.png" id="computerReplace">	
+					<img src="images/rock-paper-scissors.gif" style ="height:200px; width:350px;"  id="computerReplace">	
 				</div>
 				<div class="col-md-4" id="buttonDiv"> 
-					<div class="centering">
-						<button type="click"  class="flash-button" id="rock">Rock</button>
-						<button type="button" class="flash-button" id="paper">Paper</button>
-						<button type="button" class="flash-button" id="scissors">Scissor</button>
+					<div   class=" col-12 centering">
+						<button type="click"  class="btn btn-primary" id="rock">Rock</button>
+						<button type="button" class="btn btn-primary" id="paper">Paper</button>
+						<button type="button" class="btn btn-primary" id="scissors">Scissor</button>
+					</div>
+
+					<div   class=" col-md-6 col-md-offset-3" id=" results">
+
+						<h3 id="youDash"><span id="resultColor"></span></h3>
+						<button type="click" class="btn btn-primary" id="refreshButton" >Play Again!</button>
+
 					</div>
 				</div>
 				<div class="col-md-4" id="userChoice">
-					<img src="images/webimage.png" id="replace">	
+					<img src="images/rock-paper-scissors.gif" style ="height:200px; width:350px;" id="replace">	
 				</div>
 			</div>
 					<!-- comp/user choice image and buttons-->
@@ -63,15 +70,7 @@
 			</div>
 					<!-- end of instruction section -->
 
-			<div class="panel panel-body">
-				<div class="message">
-					<img src="images/winner.jpg">
-					<img src="images/lose.png">
-					<img src="images/play-again.png">
-
-				</div>
-				
-			</div>
+		
 
 			<div class="grand-footer">
 					<div id="footer">				
