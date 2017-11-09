@@ -24,7 +24,7 @@
 
 			<div class="row" >
 				<div class="col-md-4" id="computerChoice">
-					<img src="images/webimage.png">	
+					<img src="images/webimage.png" id="computerReplace">	
 				</div>
 				<div class="col-md-4" id="buttonDiv"> 
 					<div class="centering">
@@ -33,17 +33,19 @@
 						<button type="button" class="flash-button" id="scissors">Scissor</button>
 					</div>
 				</div>
-				<div class="col-md-4" id="computerChoice">
-					<img src="images/webimage.png">	
+				<div class="col-md-4" id="userChoice">
+					<img src="images/webimage.png" id="replace">	
 				</div>
 			</div>
 					<!-- comp/user choice image and buttons-->
 
 			<div class="row">
 				<div class="panel panel-default" id="resultsPanel">
-					<div class="panel-body">
-						<h3 class="choices">Computer Choice:<span id="computerChoice"></span></h3>
-						<h3 class="choices">You Chose:<span id="youChoice"></span></h3>
+					<div class=" col-md-6 panel-body" id="resultsBody">
+						<h3 class="col-md-6 choices">Computer: <span id="computerChose"></span></h3>
+				    </div>
+				    <div class="panel-body">
+						<h3 class="choices">You: <span id="youChoice"></span></h3>
 				    </div>
 				</div>
 			</div>
