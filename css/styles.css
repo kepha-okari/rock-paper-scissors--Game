@@ -24,9 +24,10 @@ body{
 }
 /*this are styles for the computer choice column*/
 #resultColor{
+	
 	color: #ffffff;
 	text-align: center;
-	font-size: 35px;
+	font-size: 35px; margin-left: 40px;
 }
 .centering {
 	margin-left: 40px;
@@ -38,6 +39,7 @@ body{
 	align-content: center;
 	font-size: 25px;
 	font-weight: bold;
+
 }
 #rock{
 	color: #00ccff;
@@ -71,8 +73,7 @@ button {
 }
 .choices{
 	padding: 10px;
-	/*margin-left: 400px;
-	margin-right: 400px;*/	
+	
 }
 
 

@@ -36,7 +36,7 @@ var compare = function(choice1,choice2) {
 	        else if (choice1 === 3) {
 	                if (choice2 === 1) {
 	                    // rock wins
-	                    return "You lose! ";
+	                    return "You lose!";
 	                } else {
 	                    // scissors wins
 	                    return "You win!";
@@ -65,6 +65,41 @@ function words(choice){
    
   }
 
+  // this function determines if the user has won atleast twice so as to become the overall winner
+
+  var compScore =0;
+  var yourScore = 0;
+
+  function winner (){
+  	console.log("ok");
+   //  console.log("funct");
+
+  	// if (yourScore>=2){
+  	// 	alert("you are very lucky you have won twice");
+  	// 	yourScore+=1;
+  	// }
+  	// else if (compScore>=2){
+  	// 	alert("you have lost three times");
+  	// }
+  	// else if (results="You win!"){
+  	// 	yourScore +=1;
+  	// 	compScore+= 0;
+  	// 	alert("ok");
+
+  	// }
+  	// else if(results="You lose!"){
+  	// 	compScore +=1;
+  	// 	yourScore+=0;
+  	// 	alert("ok");
+
+  	// }
+  	// else {
+  	// 	compScore+=o
+  	// 	yourScore+=0;
+  	// 	alert("ok");
+  	// }
+  }
+
  //USER INTERFACE
  $(document).ready(function(){
  	// this is Rock button
@@ -82,7 +117,9 @@ function words(choice){
 
 
  		var results = compare(choice2,choice1);
- 		$("#resultColor").text(results).show(2000).fadeOut(5000);
+ 		$("#resultColor").text(results).show(2000).fadeOut(8000);
+
+ 		//alert(winner());
 
  		displayImage (choice1,choice2);
  	});
@@ -102,7 +139,8 @@ function words(choice){
 
 
  		var results = compare(choice2,choice1);
- 		$("#resultColor").text(results).show(2000).fadeOut(5000);
+ 		$("#resultColor").text(results).show(2000).fadeOut(8000);
+ 		winner(results);
 
  		displayImage (choice1,choice2);
 
@@ -124,7 +162,7 @@ function words(choice){
  		$("#resultsPanel").show(3000).fadeOut(3000);
 
  		var results = compare(choice2,choice1);
- 		$("#resultColor").text(results).show(2000).fadeOut(5000);
+ 		$("#resultColor").text(results).show(2000).fadeOut(8000);
 
  		displayImage (choice1,choice2);
 
@@ -136,9 +174,6 @@ function words(choice){
     location.reload();
 
 	});
-
-
-
 
  });
 
