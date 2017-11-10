@@ -1,9 +1,6 @@
-// var userChoice = prompt("Do you choose rock, paper or scissors");
 
  //BUSINESS LOGIC
 
-/* var choice1 = 0;
- var choice2 = 0;*/
 
  var compChoice = function() {
  	var rand = Math.floor((Math.random()*3)+1);
@@ -49,7 +46,7 @@ var compare = function(choice1,choice2) {
  }
 
 
-//to display what comp and user choice
+//to display what comp and user choose
 function words(choice){
 	if (choice===1){
 		return "ROCK";
@@ -85,7 +82,7 @@ function words(choice){
 
 
  		var results = compare(choice2,choice1);
- 		$("#resultColor").text(results);
+ 		$("#resultColor").text(results).show(2000).fadeOut(5000);
 
  		displayImage (choice1,choice2);
  	});
@@ -101,11 +98,11 @@ function words(choice){
 
  		$("#computerChose").text(words(choice1));
  		$("#youChoice").text(words(choice2));
- 		 $("#resultsPanel").show(3000).fadeOut(3000);
+ 		$("#resultsPanel").show(3000).fadeOut(3000);
 
 
  		var results = compare(choice2,choice1);
- 		$("#resultColor").text(results);
+ 		$("#resultColor").text(results).show(2000).fadeOut(5000);
 
  		displayImage (choice1,choice2);
 
@@ -124,7 +121,7 @@ function words(choice){
 
  		$("#computerChose").text(words(choice1));
  		$("#youChoice").text(words(choice2));
- 		 $("#resultsPanel").show(3000).fadeOut(3000);
+ 		$("#resultsPanel").show(3000).fadeOut(3000);
 
  		var results = compare(choice2,choice1);
  		$("#resultColor").text(results).show(2000).fadeOut(5000);

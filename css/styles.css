@@ -1,6 +1,6 @@
 /*this are styles applying to the whole webpages*/
 body{
-	background:url("../images/background.png");
+	background:url("../images/background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -19,7 +19,8 @@ body{
 
 #title{
 	padding-top: 20px;
-	font-family: 'Great Vibes', cursive
+	font-family: 'Great Vibes', cursive;
+	font-size:70px;
 }
 /*this are styles for the computer choice column*/
 #resultColor{
@@ -39,10 +40,10 @@ body{
 	font-weight: bold;
 }
 #rock{
-	color: #3333ff;
+	color: #00ccff;
 }
 #paper{
-	color:#00e64d ;
+	color:#00ccff ;
 }
 #scissors{
 	color:#00ccff;
@@ -50,8 +51,6 @@ body{
 .choices{
 	padding: 10px;
 	font-family: 'Orbitron', sans-serif;
-	/*margin-left: 400px;
-	margin-right: 400px;*/	
 }
 
 #buttonDiv{
@@ -79,7 +78,7 @@ button {
 
 /*this applies to the panel with game instructions*/
 p{
-	font-family: 'Cookie', cursive;
+	font-family: 'scheherazade',serif;
 	font-size: 25px;
 }
 #instructionsPanel{
@@ -87,12 +86,13 @@ p{
 	margin-top: 10px;
 }
 #instructions{
-	font-family: 'Great Vibes', cursive
+	font-family: 'scheherazade',serif;
+	font-weight: bolder;
 
 }
 
 .grand-footer {
-	background-color: rgb(244, 66, 66);
+	background-color:#00ccff;
 }
 #footer {
 	height: 10vh;
